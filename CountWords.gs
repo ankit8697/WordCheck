@@ -28,6 +28,8 @@ function countWords() {
         var textStyle = {};
         textStyle[DocumentApp.Attribute.BOLD] = true;
         paragraphs[i].editAsText().setAttributes(startIndex, endIndex, textStyle);
+        count = 0;
+        counting = false;
       }
     }
     
